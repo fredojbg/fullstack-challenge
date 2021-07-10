@@ -14,6 +14,7 @@ export const Title = styled.Text`
 `;
 
 export const Image = styled.Image`
+  
 `;
 
 
@@ -32,7 +33,8 @@ export const Link = styled.Text`
 `;
 
 export const Card = styled.View`
-
+ padding: 0px 20px;
+ border-radius: 100px;
 `;
 
 export const Heading = styled.View`
