@@ -1,6 +1,8 @@
 import React from 'react';
 import { ScrollView } from 'react-native-gesture-handler';
 import Cover from '../../components/Cover';
+
+import { Share } from 'react-native'
 import FloatActionsButton from '../../components/FloatActionsButton';
 import { AuthorName, Content, MainContainer, TitleItem, TitleItemBold } from './styles';
 
