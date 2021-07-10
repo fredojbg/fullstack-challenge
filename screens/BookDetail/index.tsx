@@ -1,6 +1,7 @@
 import React from 'react';
 import { ScrollView } from 'react-native-gesture-handler';
 import Cover from '../../components/Cover';
+import FloatActionsButton from '../../components/FloatActionsButton';
 import { AuthorName, Content, MainContainer, TitleItem, TitleItemBold } from './styles';
 
 
@@ -8,6 +9,7 @@ const BookDetail: React.FC = () => {
   return (
     <ScrollView>
       <Cover />
+      <FloatActionsButton />
       <MainContainer>
         <TitleItem>
           <TitleItemBold>Hooked</TitleItemBold> : How to Build Habid-Forming Products
