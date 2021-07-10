@@ -7,25 +7,27 @@ import { AuthorName, Content, MainContainer, TitleItem, TitleItemBold } from './
 
 const BookDetail: React.FC = () => {
   return (
-    <ScrollView>
-      <Cover />
+    <>
       <FloatActionsButton />
-      <MainContainer>
-        <TitleItem>
-          <TitleItemBold>Hooked</TitleItemBold> : How to Build Habid-Forming Products
-        </TitleItem>
-        <AuthorName>
-          Nir Eyal
-        </AuthorName>
-        {/* Markdown content */}
-        <Content>
-          How do successful companies create products people can’t put down? {'\n'}{'\n'}
-          Why do some products capture widespread attention while others flop? {'\n'}{'\n'}
-          Why do some products capture widespread attention while others flop? {'\n'} {'\n'}
-          Why do some products capture widespread attention while others flop?
-        </Content>
-      </MainContainer>
-    </ScrollView>
+      <ScrollView>
+        <Cover />
+        <MainContainer>
+          <TitleItem>
+            <TitleItemBold>Hooked</TitleItemBold> : How to Build Habid-Forming Products
+          </TitleItem>
+          <AuthorName>
+            Nir Eyal
+          </AuthorName>
+          {/* Markdown content */}
+          <Content>
+            How do successful companies create products people can’t put down? {'\n'}{'\n'}
+            Why do some products capture widespread attention while others flop? {'\n'}{'\n'}
+            Why do some products capture widespread attention while others flop? {'\n'} {'\n'}
+            Why do some products capture widespread attention while others flop?
+          </Content>
+        </MainContainer>
+      </ScrollView>
+    </>
   );
 }
 

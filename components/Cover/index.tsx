@@ -7,7 +7,9 @@ const bookCover = require('../../assets/images/bookcover.png');
 
 const Cover: React.FC = () => {
   return (
-    <View>
+    <View style={{
+      backgroundColor: '#FFF'
+    }}>
       <Image source={coverBack} />
       <ImageBook source={bookCover} style={{
         width: 151,

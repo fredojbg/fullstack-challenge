@@ -2,7 +2,7 @@ import styled from 'styled-components/native';
 
 export const MainContainer = styled.View`
   padding: 31px 20px 0 20px;
-  background-color: #F2F2F2;
+  background-color: #FFFF;
 `;
 
 export const TitleItem = styled.Text`
@@ -31,4 +31,5 @@ export const Content = styled.Text`
   margin-top: 10px;
   letter-spacing: 0.2px;
   color: rgba(49, 49, 49, 0.6);
+  padding-bottom: 200px;
 `;

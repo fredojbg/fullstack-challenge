@@ -19,7 +19,7 @@ export const Content = styled.Text`
 
 export const FloatButtons = styled.View`
   position: absolute;
-  bottom: 100px;
+  bottom: 30px;
   width: 335px;
   height: 56px;
   left: 25px;
