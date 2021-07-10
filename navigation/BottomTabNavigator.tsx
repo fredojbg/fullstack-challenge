@@ -12,6 +12,7 @@ import { Image } from 'react-native';
 import Colors from '../constants/Colors';
 import useColorScheme from '../hooks/useColorScheme';
 import Home from '../screens/Home/Home';
+import BookDetail from '../screens/BookDetail/index';
 import Libraries from '../screens/Profile';
 import Profile from '../screens/Libraries';
 import { BottomTabParamList, TabHomeParamList, TabLibrariesParamList, TabProfileParamList } from '../types';
@@ -27,7 +28,7 @@ export default function BottomTabNavigator() {
 
   return (
     <BottomTab.Navigator
-      initialRouteName="Home"
+      initialRouteName="BookDetail"
       tabBarOptions={{ activeTintColor: Colors[colorScheme].tint }}>
       <BottomTab.Screen
         name="Home"
@@ -46,6 +47,14 @@ export default function BottomTabNavigator() {
       <BottomTab.Screen
         name="Profile"
         component={ProfileTab}
+        options={{
+          tabBarIcon: ({ color }) => <Image source={profileIcon} />,
+        }}
+      />
+
+      <BottomTab.Screen
+        name="BookDetail"
+        component={DetailTab}
         options={{
           tabBarIcon: ({ color }) => <Image source={profileIcon} />,
         }}
@@ -97,5 +106,18 @@ function ProfileTab() {
         component={Profile}
       />
     </TabProfileStack.Navigator>
+  );
+}
+
+const TabDetailStack = createStackNavigator<TabProfileParamList>();
+
+function DetailTab() {
+  return (
+    <TabDetailStack.Navigator>
+      <TabDetailStack.Screen
+        name="Profile"
+        component={BookDetail}
+      />
+    </TabDetailStack.Navigator>
   );
 }
