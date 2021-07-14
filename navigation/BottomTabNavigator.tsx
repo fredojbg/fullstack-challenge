@@ -16,6 +16,7 @@ import BookDetail from '../screens/BookDetail/index';
 import Libraries from '../screens/Profile';
 import Profile from '../screens/Libraries';
 import { BottomTabParamList, TabHomeParamList, TabLibrariesParamList, TabProfileParamList } from '../types';
+import Search from '../screens/Search';
 
 const homeIcon = require('../assets/images/home.png');
 const librariesIcon = require('../assets/images/libraries.png');
@@ -103,7 +104,7 @@ function ProfileTab() {
     <TabProfileStack.Navigator>
       <TabProfileStack.Screen
         name="Profile"
-        component={Profile}
+        component={Search}
       />
     </TabProfileStack.Navigator>
   );
