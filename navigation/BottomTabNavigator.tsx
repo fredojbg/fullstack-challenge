@@ -17,6 +17,7 @@ import Libraries from '../screens/Profile';
 import Profile from '../screens/Libraries';
 import { BottomTabParamList, TabHomeParamList, TabLibrariesParamList, TabProfileParamList } from '../types';
 import Search from '../screens/Search';
+import AddBook from '../screens/AddBook';
 
 const homeIcon = require('../assets/images/home.png');
 const librariesIcon = require('../assets/images/libraries.png');
@@ -91,7 +92,7 @@ function LibrariesTab() {
     <TabLibrariesStack.Navigator>
       <TabLibrariesStack.Screen
         name="Libraries"
-        component={Libraries}
+        component={AddBook}
       />
     </TabLibrariesStack.Navigator>
   );
