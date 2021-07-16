@@ -7,4 +7,4 @@ const graphqlPort = ENV.PORT || 9000;
 
 const dbUrl = `mongodb+srv://alfredoteste:alfredoteste@timelinecluster.d2aga.mongodb.net/demo`;
 
-module.exports = { jwtSecret, graphqlPort, dbUrl };
+module.exports = { graphqlPort, dbUrl };
