@@ -5,10 +5,6 @@ const { ObjectId } = mongoose.Schema.Types;
 
 const BookSchema = new Schema(
   {
-    user: {
-      type: ObjectId,
-      ref: "User"
-    },
     title: {
       type: String,
       require: true

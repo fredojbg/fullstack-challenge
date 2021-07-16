@@ -1,7 +1,7 @@
 module.exports = {
-  apps : [{
+  apps: [{
     script: './src/index.js',
-    name: 'timeline-graphql-api',
+    name: 'api-books',
     instances: 1,
     autorestart: true,
     watch: false,
