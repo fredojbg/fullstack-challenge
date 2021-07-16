@@ -8,7 +8,7 @@ module.exports = {
   args: { search: { type: GraphQLString } },
   resolve: async (_, { search }, context) => {
     if (search) {
-      return await BookModel.find({ title: { $regex: search } })
+      return await BookModel.find({ title: { $regex: search, $options: "$i" } })
     }
     return await BookModel.find({});
   }
